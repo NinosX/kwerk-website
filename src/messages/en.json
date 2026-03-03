@@ -7,7 +7,7 @@
     "home": "Home",
     "addresses": "Addresses",
     "spaces": "Spaces",
-    "services": "Services",
+    "services": "Experiences",
     "events": "Events",
     "gallery": "Gallery",
     "contact": "Contact",
@@ -88,23 +88,27 @@
     }
   },
   "services": {
-    "title": "Our services",
+    "title": "Our experiences",
     "subtitle": "A holistic work experience",
     "dana": {
-      "name": "Dana Restaurant",
-      "description": "Healthy and gourmet cuisine, freshly prepared daily by our chef. Daily menu, vegetarian options and floor delivery."
+      "label": "Private restaurant",
+      "name": "Le Dana",
+      "description": "Discover Le Dana, our semi-gastronomic restaurant reserved for our members and their guests, offering authentic and refined cuisine, renewed each week by our chef Lais Borba. Crafted from local and seasonal produce, her menu celebrates generous, precise and balanced cuisine."
     },
     "barista": {
-      "name": "Barista",
-      "description": "An in-house professional barista for specialty coffees, teas and hot beverages throughout the day."
+      "label": "Coffee break & signature drinks",
+      "name": "Lounge & Barista",
+      "description": "Spaces designed to welcome you throughout the day, offering specialty coffees, teas, fresh drinks and snacks, at your own pace. Tea stations on every floor complement the offering, with flavoured waters, fresh fruits and infusions."
     },
     "sport": {
+      "label": "Studios & coaching",
       "name": "Sport",
-      "description": "Over 40 classes per week: yoga, pilates, boxing, HIIT, meditation. Equipped studios and certified coaches."
+      "description": "Our Sport programme brings together a wide range of disciplines, from HIIT to boxing, cycling, yoga, pilates and hyrox. Each week, over 40 hours of classes are offered, led by a team of expert coaches. In addition, gyms are freely accessible 24/7, allowing everyone to train at their own pace."
     },
     "wellness": {
+      "label": "Daily serenity",
       "name": "Wellness",
-      "description": "Spa, saunas, flotation cabin and treatments by appointment. A wellness space to recharge body and mind."
+      "description": "We integrate daily meditation rituals and personalised Ayurvedic guidance, to place well-being at the heart of everyday life. The experience extends through spaces dedicated to recovery and relaxation: saunas, nap rooms and a flotation cabin."
     }
   },
   "events": {

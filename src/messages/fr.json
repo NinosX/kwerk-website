@@ -7,7 +7,7 @@
     "home": "Accueil",
     "addresses": "Adresses",
     "spaces": "Espaces",
-    "services": "Services",
+    "services": "Experiences",
     "events": "Evenements",
     "gallery": "Galerie",
     "contact": "Contact",
@@ -88,23 +88,27 @@
     }
   },
   "services": {
-    "title": "Nos services",
+    "title": "Nos experiences",
     "subtitle": "Une experience de travail holistique",
     "dana": {
-      "name": "Restaurant Dana",
-      "description": "Une cuisine saine et gourmande, preparee chaque jour par notre chef. Menu du jour, options vegetariennes et livraison a l'etage."
+      "label": "Restaurant prive",
+      "name": "Le Dana",
+      "description": "Decouvrez Le Dana, notre restaurant semi-gastronomique reserve a nos membres et leurs invites, qui propose une cuisine authentique et raffinee, renouvelee chaque semaine par notre cheffe Lais Borba. Elaboree a partir de produits locaux et de saison, sa carte celebre une cuisine genereuse, precise et equilibree."
     },
     "barista": {
-      "name": "Barista",
-      "description": "Un barista professionnel a demeure pour des cafes de specialite, thes et boissons chaudes tout au long de la journee."
+      "label": "Pause cafe & boissons signatures",
+      "name": "Lounge et Barista",
+      "description": "Des espaces penses pour vous accueillir tout au long de la journee, proposant cafes de specialite, thes, boissons fraiches et encas, selon vos rythmes. Des tisanieres a chaque etage completent l'offre, avec eaux aromatisees, fruits frais et infusions."
     },
     "sport": {
+      "label": "Studios & coaching",
       "name": "Sport",
-      "description": "Plus de 40 cours par semaine : yoga, pilates, boxe, HIIT, meditation. Studios equipes et coachs certifies."
+      "description": "Notre programmation Sport reunit une large palette de disciplines, du HIIT a la boxe, en passant par le cycling, le yoga, le pilates ou le hyrox. Chaque semaine, plus de 40 heures de cours sont proposees, animees par une equipe de coachs experts. En complement, les salles de sport sont accessibles librement 24h/24 et 7j/7, pour permettre a chacun de s'entrainer a son rythme, en toute liberte."
     },
     "wellness": {
+      "label": "Serenite au quotidien",
       "name": "Wellness",
-      "description": "Spa, saunas, cabine de flottaison et soins sur rendez-vous. Un espace de bien-etre pour recharger corps et esprit."
+      "description": "Nous integrons des rituels quotidiens de meditation ainsi qu'un accompagnement ayurvedique personnalise, pour inscrire le bien-etre au coeur du quotidien. L'experience se prolonge a travers des espaces dedies a la recuperation et a la detente : saunas, salles de sieste et cabine de flottaison."
     }
   },
   "events": {
