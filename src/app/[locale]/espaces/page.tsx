@@ -1,24 +1,13 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+import Link from 'next/link';
 import AnimatedSection from '@/components/atoms/AnimatedSection';
-import Heading from '@/components/atoms/Heading';
-import Button from '@/components/atoms/Button';
+import HeroSection from '@/components/organisms/HeroSection';
 
 const spaceTypes = [
-  {
-    id: 'executive',
-    capacity: '2-20',
-    icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
-  },
-  {
-    id: 'suites',
-    capacity: '20-50',
-    icon: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6',
-  },
-  {
-    id: 'floors',
-    capacity: '50-200+',
-    icon: 'M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z',
-  },
+  { id: 'executive', image: '/images/content/Bureaux_Hsm_1.png' },
+  { id: 'suites', image: '/images/content/Suite_SHO_2.png' },
+  { id: 'floors', image: '/images/content/SHO_privatifs.png' },
 ] as const;
 
 export default function EspacesPage() {
@@ -27,51 +16,99 @@ export default function EspacesPage() {
 
   return (
     <>
-      <div className="h-20" />
-      <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <AnimatedSection>
-          <Heading as="h1" subtitle={t('subtitle')}>
-            {t('title')}
-          </Heading>
-        </AnimatedSection>
+      <HeroSection
+        image="/images/content/bureau_header.png"
+        height="full"
+        clean
+      />
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
-          {spaceTypes.map((space) => (
-            <AnimatedSection key={space.id}>
-              <div className="p-10 bg-surface border border-border rounded-sm h-full flex flex-col hover:border-secondary transition-colors duration-300">
-                <div className="w-14 h-14 flex items-center justify-center bg-bg-alt rounded-full mb-6">
-                  <svg
-                    className="w-7 h-7 text-secondary"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d={space.icon}
-                    />
-                  </svg>
+      {/* Intro statement */}
+      <section className="py-28 px-4 sm:px-6 lg:px-8">
+        <AnimatedSection animation="zoomIn">
+          <div className="max-w-2xl mx-auto text-center">
+            <h1 className="text-[15px] uppercase tracking-[2.5px] font-medium text-primary mb-6">
+              {t('title')}
+            </h1>
+            <p className="text-[15px] leading-[1.7] text-primary/80">
+              {t('subtitle')}
+            </p>
+          </div>
+        </AnimatedSection>
+      </section>
+
+      {/* Space types - alternating layout like kwerk.fr */}
+      {spaceTypes.map((space, i) => {
+        const isReversed = i % 2 !== 0;
+        return (
+          <section key={space.id} className="pb-28">
+            <div
+              className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-stretch max-w-[94vw] mx-auto gap-10 lg:gap-20`}
+            >
+              {/* Image */}
+              <AnimatedSection
+                animation={isReversed ? 'fadeLeft' : 'fadeRight'}
+                className="flex-1"
+              >
+                <div className="relative h-[450px] md:h-[600px] overflow-hidden">
+                  <Image
+                    src={space.image}
+                    alt={t(`${space.id}.name`)}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 55vw"
+                  />
                 </div>
-                <h2 className="font-heading text-2xl font-bold text-primary mb-2">
+              </AnimatedSection>
+
+              {/* Text */}
+              <AnimatedSection
+                animation={isReversed ? 'fadeRight' : 'fadeLeft'}
+                className="flex-[0.7] min-w-[280px] flex flex-col justify-center px-4 md:px-0"
+              >
+                <p className="text-[11px] uppercase tracking-[2px] text-primary/40 mb-4">
+                  {t(`${space.id}.label`)}
+                </p>
+                <h2 className="text-[18px] uppercase tracking-[2.2px] text-primary font-normal leading-[40px] mb-4">
                   {t(`${space.id}.name`)}
                 </h2>
-                <p className="text-secondary text-sm font-medium mb-4">
-                  {space.capacity} postes
+                <p className="text-[13px] text-secondary mb-6">
+                  {t(`${space.id}.capacity`)}
                 </p>
-                <p className="text-text-light text-sm leading-relaxed flex-1">
+                <p className="text-[14px] leading-[1.7] text-primary/70 mb-8">
                   {t(`${space.id}.description`)}
                 </p>
-                <div className="mt-8">
-                  <Button href="/contact" variant="outline" size="sm">
+                <div>
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center text-[12px] uppercase tracking-[1.6px] bg-primary text-white px-6 py-3 hover:bg-white hover:text-primary border border-primary transition-all duration-300"
+                  >
                     {tNav('planVisit')}
-                  </Button>
+                  </Link>
                 </div>
-              </div>
-            </AnimatedSection>
-          ))}
-        </div>
+              </AnimatedSection>
+            </div>
+          </section>
+        );
+      })}
+
+      {/* CTA section */}
+      <section className="py-28 px-4 sm:px-6 lg:px-8 bg-primary text-center">
+        <AnimatedSection animation="zoomIn">
+          <h2 className="text-[15px] uppercase tracking-[2.5px] text-white/60 mb-6">
+            {t('title')}
+          </h2>
+          <p className="font-heading text-2xl md:text-3xl text-white max-w-2xl mx-auto leading-relaxed">
+            {t('subtitle')}
+          </p>
+          <div className="mt-12">
+            <Link
+              href="/contact"
+              className="inline-flex text-[12px] uppercase tracking-[1.5px] text-white border border-white/50 px-8 py-4 hover:bg-white hover:text-primary transition-all duration-500"
+            >
+              {tNav('planVisit')}
+            </Link>
+          </div>
+        </AnimatedSection>
       </section>
     </>
   );

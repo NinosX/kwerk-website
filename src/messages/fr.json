@@ -69,16 +69,22 @@
     "title": "Nos espaces",
     "subtitle": "Des solutions adaptees a chaque besoin",
     "executive": {
+      "label": "Espaces cles en main",
       "name": "Bureaux Executifs",
-      "description": "Des bureaux privatifs de 2 a 20 postes, entierement equipes et personnalisables. Mobilier haut de gamme, lumiere naturelle et services premium inclus."
+      "capacity": "2-20 postes",
+      "description": "Des bureaux intimistes et baignes de lumiere, concus pour vous accueillir dans un cadre elegant et serein. Chaque espace allie confort, discretion et confidentialite, avec un mobilier haut de gamme et des services premium inclus."
     },
     "suites": {
+      "label": "Identite sur-mesure",
       "name": "Suites Signatures",
-      "description": "Des espaces de 20 a 50 postes avec amenagements sur mesure. Identite propre, acces privatif et services dedies pour les equipes en croissance."
+      "capacity": "20-50 postes",
+      "description": "Des suites entierement personnalisables, associant espaces de reception, salons prives et salles de reunion. Une identite propre, un acces privatif et des services dedies pour les equipes en quete d'une representation haut de gamme."
     },
     "floors": {
+      "label": "Plateaux modulables",
       "name": "Etages Privatifs",
-      "description": "Des etages entiers de 50 a 200+ postes pour les entreprises recherchant exclusivite et confidentialite totales. Configuration libre et branding personnalise."
+      "capacity": "50-200+ postes",
+      "description": "Des etages entierement privatisables, configurables selon vos usages, integrant espaces d'accueil, zones collaboratives, phone booths et terrasses privatives. La solution pour les entreprises recherchant exclusivite et confidentialite totales."
     }
   },
   "services": {

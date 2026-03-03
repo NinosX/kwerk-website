@@ -69,16 +69,22 @@
     "title": "Our spaces",
     "subtitle": "Solutions tailored to every need",
     "executive": {
+      "label": "Turn-key spaces",
       "name": "Executive Offices",
-      "description": "Private offices for 2 to 20 workstations, fully equipped and customizable. Premium furniture, natural light and included premium services."
+      "capacity": "2-20 workstations",
+      "description": "Intimate, light-filled offices designed to welcome you in an elegant and serene setting. Each space combines comfort, discretion and confidentiality, with premium furniture and included services."
     },
     "suites": {
+      "label": "Bespoke identity",
       "name": "Signature Suites",
-      "description": "Spaces for 20 to 50 workstations with bespoke layouts. Own identity, private access and dedicated services for growing teams."
+      "capacity": "20-50 workstations",
+      "description": "Fully customizable suites combining reception areas, private lounges and meeting rooms. A unique identity, private access and dedicated services for teams seeking high-end representation."
     },
     "floors": {
+      "label": "Modular floors",
       "name": "Private Floors",
-      "description": "Full floors for 50 to 200+ workstations for companies seeking total exclusivity and confidentiality. Free layout and custom branding."
+      "capacity": "50-200+ workstations",
+      "description": "Entirely private floors, configurable to your needs, integrating reception areas, collaborative zones, phone booths and private terraces. The solution for companies seeking total exclusivity and confidentiality."
     }
   },
   "services": {
