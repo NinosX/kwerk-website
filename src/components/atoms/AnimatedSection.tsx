@@ -1,6 +1,7 @@
 'use client';
 
-import { motion, type Variants } from 'framer-motion';
+import { useRef, useState } from 'react';
+import { motion, useInView, type Variants } from 'framer-motion';
 import { fadeInUp, fadeRight, fadeLeft, zoomIn } from '@/lib/animations';
 import type { ReactNode } from 'react';
 
@@ -29,14 +30,23 @@ export default function AnimatedSection({
   delay = 0,
 }: AnimatedSectionProps) {
   const v = variants || animationMap[animation];
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, margin: '-50px' });
+  const [done, setDone] = useState(false);
+
+  // Once animation completes, render a plain div (no transform = no text blur)
+  if (done) {
+    return <div className={className}>{children}</div>;
+  }
 
   return (
     <motion.div
+      ref={ref}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: '-50px' }}
+      animate={isInView ? 'visible' : 'hidden'}
       variants={v}
       transition={{ delay }}
+      onAnimationComplete={() => setDone(true)}
       className={className}
     >
       {children}
