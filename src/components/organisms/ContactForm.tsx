@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useTranslations } from 'next-intl';
+import { useSearchParams } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import Input from '@/components/atoms/Input';
 import Select from '@/components/atoms/Select';
@@ -13,6 +14,9 @@ import { contactFormSchema, type ContactFormValues } from '@/lib/validation';
 
 export default function ContactForm() {
   const t = useTranslations('contact');
+  const tLoc = useTranslations('locations');
+  const searchParams = useSearchParams();
+  const preselectedLocation = searchParams.get('centre') || '';
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
   const {
@@ -29,6 +33,7 @@ export default function ContactForm() {
       phone: '',
       company: '',
       positions: '',
+      location: preselectedLocation,
       type: '',
       source: '',
       message: '',
@@ -38,7 +43,6 @@ export default function ContactForm() {
   const getError = (field: keyof ContactFormValues) => {
     const err = errors[field]?.message;
     if (!err) return undefined;
-    // Map zod error keys to translation keys
     if (err === 'required') return t('required');
     if (err === 'invalidEmail') return t('invalidEmail');
     if (err === 'invalidPhone') return t('invalidPhone');
@@ -60,6 +64,13 @@ export default function ContactForm() {
       setStatus('error');
     }
   };
+
+  const locationOptions = [
+    { value: 'saint-honore', label: tLoc('saint-honore.name') },
+    { value: 'messine', label: tLoc('messine.name') },
+    { value: 'madeleine', label: tLoc('madeleine.name') },
+    { value: 'haussmann', label: tLoc('haussmann.name') },
+  ];
 
   const typeOptions = [
     { value: 'executive', label: t('typeOptions.executive') },
@@ -128,6 +139,13 @@ export default function ContactForm() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Select
+          id="location"
+          label={t('location')}
+          options={locationOptions}
+          placeholder={t('locationPlaceholder')}
+          {...register('location')}
+        />
+        <Select
           id="type"
           label={t('type')}
           options={typeOptions}
@@ -135,14 +153,15 @@ export default function ContactForm() {
           error={getError('type')}
           {...register('type')}
         />
-        <Select
-          id="source"
-          label={t('source')}
-          options={sourceOptions}
-          placeholder={t('sourcePlaceholder')}
-          {...register('source')}
-        />
       </div>
+
+      <Select
+        id="source"
+        label={t('source')}
+        options={sourceOptions}
+        placeholder={t('sourcePlaceholder')}
+        {...register('source')}
+      />
 
       <Textarea
         id="message"

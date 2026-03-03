@@ -50,8 +50,8 @@ export default function HomePage() {
         }}
       />
 
-      {/* Hero with slideshow */}
-      <HeroSection showCta height="full" images={heroSlides} />
+      {/* Hero with slideshow - clean like kwerk.fr (no text, just image + logo) */}
+      <HeroSection height="full" images={heroSlides} clean />
 
       {/* Brand statement */}
       <section className="py-28 px-4 sm:px-6 lg:px-8">

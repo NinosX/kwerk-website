@@ -139,6 +139,8 @@
     "phone": "Telephone",
     "company": "Societe",
     "positions": "Nombre de postes",
+    "location": "Centre prefere",
+    "locationPlaceholder": "Selectionnez un centre...",
     "type": "Type de recherche",
     "typePlaceholder": "Selectionnez...",
     "typeOptions": {

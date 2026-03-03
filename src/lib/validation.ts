@@ -7,6 +7,7 @@ export const contactFormSchema = z.object({
   phone: z.string().min(1, 'required').regex(/^[\d\s+()-]{6,20}$/, 'invalidPhone'),
   company: z.string().min(1, 'required'),
   positions: z.string().optional(),
+  location: z.string().optional(),
   type: z.string().min(1, 'required'),
   source: z.string().optional(),
   message: z.string().min(1, 'required'),

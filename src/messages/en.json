@@ -139,6 +139,8 @@
     "phone": "Phone",
     "company": "Company",
     "positions": "Number of workstations",
+    "location": "Preferred center",
+    "locationPlaceholder": "Select a center...",
     "type": "Type of inquiry",
     "typePlaceholder": "Select...",
     "typeOptions": {

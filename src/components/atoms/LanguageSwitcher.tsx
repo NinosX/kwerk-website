@@ -1,7 +1,7 @@
 'use client';
 
 import { useLocale } from 'next-intl';
-import { usePathname, useRouter } from 'next/navigation';
+import { useRouter, usePathname } from '@/i18n/navigation';
 
 interface LanguageSwitcherProps {
   className?: string;
@@ -9,24 +9,12 @@ interface LanguageSwitcherProps {
 
 export default function LanguageSwitcher({ className }: LanguageSwitcherProps) {
   const locale = useLocale();
-  const pathname = usePathname();
   const router = useRouter();
+  const pathname = usePathname();
 
   const switchLocale = () => {
     const newLocale = locale === 'fr' ? 'en' : 'fr';
-
-    // Remove the current locale prefix from pathname
-    let newPath = pathname;
-    if (locale === 'en') {
-      newPath = pathname.replace(/^\/en/, '') || '/';
-    }
-
-    // Add the new locale prefix if not default (fr)
-    if (newLocale === 'en') {
-      newPath = `/en${newPath === '/' ? '' : newPath}`;
-    }
-
-    router.push(newPath);
+    router.replace(pathname, { locale: newLocale });
   };
 
   return (

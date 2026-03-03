@@ -37,7 +37,7 @@ function LocationContent({ slug }: { slug: string }) {
         height="large"
         showCta
         ctaText={t('contactCta')}
-        ctaHref="/contact"
+        ctaHref={`/contact?centre=${slug}`}
       />
 
       {/* Stats */}
@@ -151,7 +151,7 @@ function LocationContent({ slug }: { slug: string }) {
           <h2 className="font-heading text-2xl md:text-3xl font-bold text-white mb-6">
             {t('contactCta')}
           </h2>
-          <Button href="/contact" variant="secondary" size="lg">
+          <Button href={`/contact?centre=${slug}`} variant="secondary" size="lg">
             {t('contactCta')}
           </Button>
         </AnimatedSection>
