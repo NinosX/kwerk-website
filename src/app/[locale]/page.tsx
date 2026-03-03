@@ -57,11 +57,12 @@ export default function HomePage() {
       <section className="py-28 px-4 sm:px-6 lg:px-8">
         <AnimatedSection animation="zoomIn">
           <div className="max-w-2xl mx-auto text-center">
-            <div className="w-12 h-12 mx-auto mb-8 opacity-30">
-              <svg viewBox="0 0 24 24" fill="currentColor" className="text-primary">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/logo_adresses.svg"
+              alt=""
+              className="w-7 h-7 mx-auto mb-8 opacity-30"
+            />
             <h2 className="text-[15px] uppercase tracking-[2.5px] font-medium text-primary mb-6">
               L&apos;exceptionnel au quotidien
             </h2>
