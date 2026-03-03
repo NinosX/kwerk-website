@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import AnimatedSection from '@/components/atoms/AnimatedSection';
+import LuxuryImageHover from '@/components/atoms/LuxuryImageHover';
 import HeroSection from '@/components/organisms/HeroSection';
 
 const spaceTypes = [
@@ -23,7 +24,7 @@ export default function EspacesPage() {
       />
 
       {/* Intro statement */}
-      <section className="py-28 px-4 sm:px-6 lg:px-8">
+      <section className="py-40 px-4 sm:px-6 lg:px-8">
         <AnimatedSection animation="zoomIn">
           <div className="max-w-2xl mx-auto text-center">
             <h1 className="text-[15px] uppercase tracking-[2.5px] font-medium text-primary mb-6">
@@ -40,24 +41,21 @@ export default function EspacesPage() {
       {spaceTypes.map((space, i) => {
         const isReversed = i % 2 !== 0;
         return (
-          <section key={space.id} className="pb-28">
+          <section key={space.id} className="pb-32">
             <div
-              className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-stretch max-w-[94vw] mx-auto gap-10 lg:gap-20`}
+              className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-stretch max-w-[94vw] mx-auto gap-12 lg:gap-24`}
             >
               {/* Image */}
               <AnimatedSection
                 animation={isReversed ? 'fadeLeft' : 'fadeRight'}
                 className="flex-1"
               >
-                <div className="relative h-[450px] md:h-[600px] overflow-hidden">
-                  <Image
-                    src={space.image}
-                    alt={t(`${space.id}.name`)}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 55vw"
-                  />
-                </div>
+                <LuxuryImageHover
+                  src={space.image}
+                  alt={t(`${space.id}.name`)}
+                  className="h-[450px] md:h-[600px]"
+                  sizes="(max-width: 768px) 100vw, 55vw"
+                />
               </AnimatedSection>
 
               {/* Text */}
@@ -92,7 +90,7 @@ export default function EspacesPage() {
       })}
 
       {/* CTA section */}
-      <section className="py-28 px-4 sm:px-6 lg:px-8 bg-primary text-center">
+      <section className="py-36 px-4 sm:px-6 lg:px-8 bg-primary text-center">
         <AnimatedSection animation="zoomIn">
           <h2 className="text-[15px] uppercase tracking-[2.5px] text-white/60 mb-6">
             {t('title')}

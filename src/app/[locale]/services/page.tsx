@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import AnimatedSection from '@/components/atoms/AnimatedSection';
+import LuxuryImageHover from '@/components/atoms/LuxuryImageHover';
 import HeroSection from '@/components/organisms/HeroSection';
 
 const services = [
@@ -28,24 +29,21 @@ export default function ServicesPage() {
       {services.map((svc, i) => {
         const isReversed = i % 2 !== 0;
         return (
-          <section key={svc.id} className="py-6">
+          <section key={svc.id} className="py-12">
             <div
-              className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-stretch w-[94vw] mx-auto gap-16`}
+              className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-stretch w-[94vw] mx-auto gap-20 lg:gap-28`}
             >
               {/* Image */}
               <AnimatedSection
                 animation={isReversed ? 'fadeLeft' : 'fadeRight'}
                 className="flex-1"
               >
-                <div className="relative h-[300px] md:h-[500px] overflow-hidden rounded-[3px]">
-                  <Image
-                    src={svc.image}
-                    alt={t(`${svc.id}.name`)}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 55vw"
-                  />
-                </div>
+                <LuxuryImageHover
+                  src={svc.image}
+                  alt={t(`${svc.id}.name`)}
+                  className="h-[450px] md:h-[600px] rounded-[3px]"
+                  sizes="(max-width: 768px) 100vw, 55vw"
+                />
               </AnimatedSection>
 
               {/* Text */}
@@ -69,7 +67,7 @@ export default function ServicesPage() {
       })}
 
       {/* CTA section */}
-      <section className="py-28 px-4 sm:px-6 lg:px-8 bg-primary text-center">
+      <section className="py-36 px-4 sm:px-6 lg:px-8 bg-primary text-center">
         <AnimatedSection animation="zoomIn">
           <h2 className="text-[15px] uppercase tracking-[2.5px] text-white/60 mb-6">
             {t('title')}

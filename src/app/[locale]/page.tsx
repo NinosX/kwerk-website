@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import HeroSection from '@/components/organisms/HeroSection';
 import AnimatedSection from '@/components/atoms/AnimatedSection';
+import LuxuryImageHover from '@/components/atoms/LuxuryImageHover';
 import Heading from '@/components/atoms/Heading';
 import Button from '@/components/atoms/Button';
 import ServiceCard from '@/components/molecules/ServiceCard';
@@ -54,9 +55,9 @@ export default function HomePage() {
       <HeroSection height="full" images={heroSlides} clean />
 
       {/* Brand statement */}
-      <section className="py-28 px-4 sm:px-6 lg:px-8">
-        <AnimatedSection animation="zoomIn">
-          <div className="max-w-2xl mx-auto text-center">
+      <section className="py-40 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center">
+          <AnimatedSection animation="zoomIn">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/logo_adresses.svg"
@@ -69,8 +70,8 @@ export default function HomePage() {
             <p className="text-[15px] leading-[1.7] text-primary/80 max-w-xl mx-auto">
               {t('hero.subtitle')}
             </p>
-          </div>
-        </AnimatedSection>
+          </AnimatedSection>
+        </div>
       </section>
 
       {/* Locations - alternating layout like kwerk.fr */}
@@ -80,23 +81,20 @@ export default function HomePage() {
           return (
             <div
               key={loc.slug}
-              className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-stretch max-w-[94vw] mx-auto mb-20 gap-10 lg:gap-16`}
+              className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-stretch max-w-[94vw] mx-auto mb-32 gap-12 lg:gap-24`}
             >
               {/* Image */}
               <AnimatedSection
                 animation={isReversed ? 'fadeLeft' : 'fadeRight'}
                 className="flex-1 max-w-[1000px]"
               >
-                <Link href={`/adresses/${loc.slug}`} className="block group">
-                  <div className="relative h-[400px] md:h-[500px] overflow-hidden">
-                    <Image
-                      src={loc.heroImage}
-                      alt={loc.name}
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                    />
-                  </div>
+                <Link href={`/adresses/${loc.slug}`} className="block">
+                  <LuxuryImageHover
+                    src={loc.heroImage}
+                    alt={loc.name}
+                    className="h-[450px] md:h-[600px]"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </Link>
               </AnimatedSection>
 
@@ -146,20 +144,17 @@ export default function HomePage() {
       </section>
 
       {/* Services - alternating with images */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f9f9f9]">
-        <div className="max-w-[94vw] mx-auto space-y-24">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-[#f9f9f9]">
+        <div className="max-w-[94vw] mx-auto space-y-28">
           {/* Dana */}
-          <div className="flex flex-col md:flex-row items-center gap-10 lg:gap-20">
+          <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-24">
             <AnimatedSection animation="fadeRight" className="flex-1">
-              <div className="relative h-[400px] md:h-[500px] overflow-hidden">
-                <Image
-                  src="/images/content/Dana_1.jpg"
-                  alt="Restaurant Dana"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+              <LuxuryImageHover
+                src="/images/content/Dana_1.jpg"
+                alt="Restaurant Dana"
+                className="h-[450px] md:h-[600px]"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </AnimatedSection>
             <AnimatedSection animation="fadeLeft" className="flex-[0.7] min-w-[280px]">
               <p className="text-[11px] uppercase tracking-[2px] text-primary/40 mb-2">
@@ -175,17 +170,14 @@ export default function HomePage() {
           </div>
 
           {/* Sport & Wellness */}
-          <div className="flex flex-col md:flex-row-reverse items-center gap-10 lg:gap-20">
+          <div className="flex flex-col md:flex-row-reverse items-center gap-12 lg:gap-24">
             <AnimatedSection animation="fadeLeft" className="flex-1">
-              <div className="relative h-[400px] md:h-[500px] overflow-hidden">
-                <Image
-                  src="/images/content/Sport_Sho_1.jpg"
-                  alt="Sport & Wellness"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+              <LuxuryImageHover
+                src="/images/content/Sport_Sho_1.jpg"
+                alt="Sport & Wellness"
+                className="h-[450px] md:h-[600px]"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </AnimatedSection>
             <AnimatedSection animation="fadeRight" className="flex-[0.7] min-w-[280px]">
               <p className="text-[11px] uppercase tracking-[2px] text-primary/40 mb-2">
@@ -203,7 +195,7 @@ export default function HomePage() {
       </section>
 
       {/* Infinite scroll photo strip */}
-      <section className="py-20 overflow-hidden">
+      <section className="py-28 overflow-hidden">
         <AnimatedSection animation="fadeUp">
           <div className="relative">
             <div className="flex gap-6 animate-scroll">
@@ -245,7 +237,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA section */}
-      <section className="py-28 px-4 sm:px-6 lg:px-8 bg-primary text-center">
+      <section className="py-36 px-4 sm:px-6 lg:px-8 bg-primary text-center">
         <AnimatedSection animation="zoomIn">
           <p className="text-secondary/80 text-[11px] uppercase tracking-[3px] mb-6 font-light">
             {brand.name}

@@ -4,9 +4,9 @@
 :root {
   --color-primary: #1a1a1a;
   --color-primary-light: #2d2d2d;
-  --color-secondary: #c8a96e;
-  --color-secondary-light: #d4bc8a;
-  --color-accent: #c8a96e;
+  --color-secondary: #b8a078;
+  --color-secondary-light: #c9b494;
+  --color-accent: #b8a078;
   --color-background: #ffffff;
   --color-background-alt: #f5f3ef;
   --color-surface: #ffffff;
@@ -123,4 +123,27 @@ html {
 
 .animate-scroll {
   animation: scroll 25s linear infinite;
+}
+
+/* ===== Grain / noise texture overlay ===== */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  background-image: url('/images/noise.png');
+  background-repeat: repeat;
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::after {
+    display: none;
+  }
+}
+
+/* ===== Loader body lock ===== */
+body.loading {
+  overflow: hidden;
 }

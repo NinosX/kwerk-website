@@ -5,6 +5,7 @@ import { routing } from '@/i18n/routing';
 import Header from '@/components/organisms/Header';
 import Footer from '@/components/organisms/Footer';
 import FloatingCTA from '@/components/organisms/FloatingCTA';
+import PageLoader from '@/components/organisms/PageLoader';
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
@@ -25,6 +26,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
+      <PageLoader />
       <Header />
       <main className="min-h-screen">{children}</main>
       <Footer />

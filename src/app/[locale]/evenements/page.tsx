@@ -26,7 +26,7 @@ export default function EvenementsPage() {
       </section>
 
       {/* Intro statement */}
-      <section className="py-28 px-4 sm:px-6 lg:px-8">
+      <section className="py-40 px-4 sm:px-6 lg:px-8">
         <AnimatedSection animation="zoomIn">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-[15px] leading-[1.7] text-primary/80">
@@ -40,7 +40,7 @@ export default function EvenementsPage() {
       <section className="px-4 sm:px-6 lg:px-8 pb-16">
         <AnimatedSection animation="fadeUp">
           <div className="max-w-[1500px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+            <div className="relative h-[450px] md:h-[600px] overflow-hidden">
               <Image
                 src="/images/galerie/saint-honore/SHO_8EME.jpeg"
                 alt=""
@@ -49,7 +49,7 @@ export default function EvenementsPage() {
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
-            <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+            <div className="relative h-[450px] md:h-[600px] overflow-hidden">
               <Image
                 src="/images/event/Terrasse_MAD.png"
                 alt=""
@@ -58,7 +58,7 @@ export default function EvenementsPage() {
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
-            <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+            <div className="relative h-[450px] md:h-[600px] overflow-hidden">
               <Image
                 src="/images/galerie/saint-honore/Traiteur.jpg"
                 alt=""
@@ -154,7 +154,7 @@ export default function EvenementsPage() {
       </section>
 
       {/* CTA section */}
-      <section className="py-28 px-4 sm:px-6 lg:px-8 bg-primary text-center">
+      <section className="py-36 px-4 sm:px-6 lg:px-8 bg-primary text-center">
         <AnimatedSection animation="zoomIn">
           <h2 className="text-[15px] uppercase tracking-[2.5px] text-white/60 mb-6">
             {t('title')}

@@ -9,9 +9,9 @@ const kwerk: BrandTokens = {
   colors: {
     primary: '#1a1a1a',
     primaryLight: '#2d2d2d',
-    secondary: '#c8a96e',
-    secondaryLight: '#d4bc8a',
-    accent: '#c8a96e',
+    secondary: '#b8a078',
+    secondaryLight: '#c9b494',
+    accent: '#b8a078',
     background: '#ffffff',
     backgroundAlt: '#f5f3ef',
     surface: '#ffffff',

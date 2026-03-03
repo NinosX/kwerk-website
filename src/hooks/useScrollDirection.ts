@@ -5,24 +5,33 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 export function useScrollDirection() {
   const [scrollDirection, setScrollDirection] = useState<'up' | 'down'>('up');
   const [scrollY, setScrollY] = useState(0);
-  const lastScrollY = useRef(0);
+  const anchorY = useRef(0);
+  const currentDir = useRef<'up' | 'down'>('up');
   const ticking = useRef(false);
 
   const update = useCallback(() => {
-    const currentScrollY = window.scrollY;
+    const y = window.scrollY;
+    setScrollY(y);
 
-    // Only update scrollY state when crossing meaningful thresholds
-    // (avoids re-renders on every single pixel)
-    const prevBucket = Math.floor(lastScrollY.current / 50);
-    const currBucket = Math.floor(currentScrollY / 50);
-    if (prevBucket !== currBucket) {
-      setScrollY(currentScrollY);
+    const distance = y - anchorY.current;
+
+    // Only switch direction after sustained scroll of 60px
+    if (currentDir.current === 'up' && distance > 60) {
+      currentDir.current = 'down';
+      anchorY.current = y;
+      setScrollDirection('down');
+    } else if (currentDir.current === 'down' && distance < -60) {
+      currentDir.current = 'up';
+      anchorY.current = y;
+      setScrollDirection('up');
     }
 
-    if (Math.abs(currentScrollY - lastScrollY.current) > 8) {
-      const newDir = currentScrollY > lastScrollY.current ? 'down' : 'up';
-      setScrollDirection((prev) => (prev !== newDir ? newDir : prev));
-      lastScrollY.current = currentScrollY;
+    // Keep anchor fresh: if user keeps scrolling same direction,
+    // move anchor forward so reversal needs a full 60px
+    if (currentDir.current === 'down' && distance > 0) {
+      anchorY.current = y;
+    } else if (currentDir.current === 'up' && distance < 0) {
+      anchorY.current = y;
     }
 
     ticking.current = false;

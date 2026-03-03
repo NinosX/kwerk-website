@@ -48,12 +48,13 @@ export default function Header() {
       {/* Navbar */}
       <header
         className={cn(
-          'fixed top-0 left-0 right-0 z-50 transition-[background-color,transform] duration-700',
-          isScrolled
-            ? 'bg-black/95'
-            : 'bg-transparent',
-          isHidden && '-translate-y-full',
+          'fixed top-0 left-0 right-0 z-50',
+          isHidden ? '-translate-y-full' : 'translate-y-0',
+          isScrolled ? 'bg-black/95' : 'bg-transparent',
         )}
+        style={{
+          transition: 'transform 900ms cubic-bezier(0.22,0.61,0.36,1), background-color 500ms ease',
+        }}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
