@@ -31,13 +31,9 @@ function LocationContent({ slug }: { slug: string }) {
   return (
     <>
       <HeroSection
-        title={t(`${slug}.name`)}
-        subtitle={t(`${slug}.description`)}
         image={location.heroImage}
-        height="large"
-        showCta
-        ctaText={t('contactCta')}
-        ctaHref={`/contact?centre=${slug}`}
+        height="full"
+        clean
       />
 
       {/* Stats */}
