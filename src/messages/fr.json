@@ -109,22 +109,22 @@
   },
   "events": {
     "title": "Evenements",
-    "subtitle": "Des experiences sur mesure dans des lieux d'exception",
-    "culinary": {
-      "name": "Culinaire",
-      "description": "Cours de cuisine, degustations, diners prives avec chef etoile."
-    },
-    "entertainment": {
-      "name": "Divertissement",
-      "description": "Concerts prives, spectacles, soirees a theme dans nos espaces."
+    "subtitle": "Nous imaginons et accompagnons vos evenements professionnels ou personnels, avec une approche sur mesure et une exigence constante dans l'execution.",
+    "experienceTitle": "Une experience unique et memorable",
+    "experienceDescription": "Pour enrichir vos moments, nous proposons des experiences culinaires inedites (ice rolls, show cooking, bars a cocktails) et des animations variees : team building, ateliers creatifs, DJ, spectacles ou stands photo. Avec un accompagnement global en scenographie, technique et animations, nous faisons de votre evenement une experience unique et memorable.",
+    "detailTitle": "Notre sens du detail",
+    "detailDescription": "Nous creons des ambiances immersives avec des scenographes, decorateurs et artisans, et assurons la production technique (son, lumiere, video). Nos decors soigneusement concus, nos eclairages sur-mesure et l'expertise de nos techniciens qualifies assurent une prestation d'exception.",
+    "scenography": {
+      "name": "Scenographie et decoration",
+      "items": "Creation d'ambiances thematiques et immersives.|Accompagnement par une equipe et scenographie dediee a votre evenement."
     },
     "technical": {
-      "name": "Technique",
-      "description": "Conferences, seminaires, ateliers avec equipement audiovisuel professionnel."
+      "name": "Technique et mise en scene",
+      "items": "Gestion technique (son, lumiere, video) adaptee a chaque projet.|Creation de decors sceniques et eclairages sur-mesure."
     },
-    "scenography": {
-      "name": "Scenographie",
-      "description": "Decorations florales, installations artistiques, mises en scene sur mesure."
+    "entertainment": {
+      "name": "Animations et interactivite",
+      "items": "Experiences culinaires : ice rolls, show cooking en direct, bar cocktails personnalises.|Animations ludiques et artistiques : activites team building, ateliers creatifs, cooperatifs.|Prestations uniques : DJ, spectacles visuels, stands photo."
     }
   },
   "gallery": {

@@ -109,22 +109,22 @@
   },
   "events": {
     "title": "Events",
-    "subtitle": "Bespoke experiences in exceptional venues",
-    "culinary": {
-      "name": "Culinary",
-      "description": "Cooking classes, tastings, private dinners with starred chefs."
-    },
-    "entertainment": {
-      "name": "Entertainment",
-      "description": "Private concerts, shows, themed parties in our spaces."
+    "subtitle": "We design and support your professional or personal events, with a bespoke approach and a constant pursuit of excellence in execution.",
+    "experienceTitle": "A unique and memorable experience",
+    "experienceDescription": "To enrich your moments, we offer unique culinary experiences (ice rolls, show cooking, cocktail bars) and a variety of entertainment: team building, creative workshops, DJs, shows or photo booths. With comprehensive support in scenography, technical production and entertainment, we make your event a unique and memorable experience.",
+    "detailTitle": "Our attention to detail",
+    "detailDescription": "We create immersive atmospheres with scenographers, decorators and artisans, and handle technical production (sound, lighting, video). Our carefully designed sets, bespoke lighting and the expertise of our qualified technicians ensure an exceptional service.",
+    "scenography": {
+      "name": "Scenography and decoration",
+      "items": "Creation of thematic and immersive atmospheres.|Support from a dedicated scenography team for your event."
     },
     "technical": {
-      "name": "Technical",
-      "description": "Conferences, seminars, workshops with professional audiovisual equipment."
+      "name": "Technical production and staging",
+      "items": "Technical management (sound, lighting, video) tailored to each project.|Creation of scenic sets and bespoke lighting."
     },
-    "scenography": {
-      "name": "Scenography",
-      "description": "Floral decorations, artistic installations, bespoke staging."
+    "entertainment": {
+      "name": "Entertainment and interactivity",
+      "items": "Culinary experiences: ice rolls, live show cooking, personalised cocktail bars.|Fun and artistic entertainment: team building activities, creative and cooperative workshops.|Unique performances: DJs, visual shows, photo booths."
     }
   },
   "gallery": {
