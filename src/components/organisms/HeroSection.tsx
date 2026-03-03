@@ -90,7 +90,7 @@ export default function HeroSection({
               backgroundImage: `url(${slideImages[currentSlide]})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              opacity: isTransitioning ? 1 : (currentSlide === previousSlide ? 1 : 1),
+              opacity: isTransitioning ? 1 : 0,
             }}
           />
         )}
