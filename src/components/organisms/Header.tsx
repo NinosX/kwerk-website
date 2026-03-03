@@ -50,7 +50,7 @@ export default function Header() {
         className={cn(
           'fixed top-0 left-0 right-0 z-50 transition-all duration-700',
           isScrolled
-            ? 'bg-black/92 backdrop-blur-md shadow-sm'
+            ? 'bg-black/95'
             : 'bg-transparent',
           isHidden && '-translate-y-full',
         )}
