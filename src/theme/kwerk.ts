@@ -2,7 +2,7 @@ import type { BrandTokens } from '@/types';
 
 const kwerk: BrandTokens = {
   name: 'KWERK',
-  tagline: 'The Art of Work',
+  tagline: "Bureaux d'exception",
   logo: '/brands/kwerk/logo.svg',
   favicon: '/brands/kwerk/favicon.ico',
   ogImage: '/brands/kwerk/og.jpg',

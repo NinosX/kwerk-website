@@ -63,6 +63,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--color-primary);
 }
 
 body {
@@ -93,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-background-alt);
+  background: var(--color-primary);
 }
 
 ::-webkit-scrollbar-thumb {

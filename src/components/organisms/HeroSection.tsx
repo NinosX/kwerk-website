@@ -156,27 +156,7 @@ export default function HeroSection({
             </motion.div>
           )}
         </motion.div>
-      ) : (
-        /* Clean hero: just the logo centered like kwerk.fr */
-        <motion.div
-          style={{ opacity }}
-          className="relative z-20 flex flex-col items-center justify-center h-full"
-        >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.2, delay: 0.3 }}
-            className="text-center"
-          >
-            <span className="font-heading text-3xl md:text-4xl tracking-[0.2em] font-bold text-white">
-              {brand.name}
-            </span>
-            <p className="text-[11px] uppercase tracking-[3px] text-white/60 mt-2">
-              {brand.tagline}
-            </p>
-          </motion.div>
-        </motion.div>
-      )}
+      ) : null}
 
       {/* Scroll indicator */}
       {height === 'full' && (
