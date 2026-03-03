@@ -52,9 +52,9 @@ export default function HeroSection({
       setPreviousSlide(currentSlide);
       setCurrentSlide((prev) => (prev + 1) % slideImages.length);
       setIsTransitioning(true);
-      const timeout = setTimeout(() => setIsTransitioning(false), 1000);
+      const timeout = setTimeout(() => setIsTransitioning(false), 1800);
       return () => clearTimeout(timeout);
-    }, 7000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [slideImages.length, currentSlide]);
 
@@ -85,7 +85,7 @@ export default function HeroSection({
         {/* Top layer (fades in during transition) */}
         {slideImages.length > 1 && (
           <div
-            className="absolute inset-0 transition-opacity duration-[800ms] ease-in-out"
+            className="absolute inset-0 transition-opacity duration-[1500ms] ease-in-out"
             style={{
               backgroundImage: `url(${slideImages[currentSlide]})`,
               backgroundSize: 'cover',
