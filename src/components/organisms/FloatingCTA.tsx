@@ -1,17 +1,32 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { useScrollDirection } from '@/hooks/useScrollDirection';
 import Button from '@/components/atoms/Button';
 
 export default function FloatingCTA() {
   const t = useTranslations('nav');
-  const { scrollY } = useScrollDirection();
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const shouldShow = window.scrollY > 600;
+        setVisible((prev) => (prev !== shouldShow ? shouldShow : prev));
+        ticking = false;
+      });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
     <AnimatePresence>
-      {scrollY > 600 && (
+      {visible && (
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
