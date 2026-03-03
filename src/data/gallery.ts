@@ -1,0 +1,75 @@
+import type { GalleryImage } from '@/types';
+
+export const galleryImages: GalleryImage[] = [
+  // Saint-Honore (22 images)
+  { id: 'sh-1', src: '/images/galerie/saint-honore/LobbySHOaccueil.jpg', alt: 'Lobby Saint-Honore', location: 'saint-honore', category: 'lobby' },
+  { id: 'sh-2', src: '/images/galerie/saint-honore/EscalierSHO1.jpg', alt: 'Escalier Saint-Honore', location: 'saint-honore', category: 'common' },
+  { id: 'sh-3', src: '/images/galerie/saint-honore/SuiteSHOv2.png', alt: 'Suite Saint-Honore', location: 'saint-honore', category: 'spaces' },
+  { id: 'sh-4', src: '/images/galerie/saint-honore/SuiteSHO2.png', alt: 'Suite Saint-Honore 2', location: 'saint-honore', category: 'spaces' },
+  { id: 'sh-5', src: '/images/galerie/saint-honore/SuitesignatureSHO1IA.png', alt: 'Suite Signature Saint-Honore', location: 'saint-honore', category: 'spaces' },
+  { id: 'sh-6', src: '/images/galerie/saint-honore/SHOprivatifs.png', alt: 'Bureaux Privatifs Saint-Honore', location: 'saint-honore', category: 'spaces' },
+  { id: 'sh-7', src: '/images/galerie/saint-honore/LOBBY_SHO_LOUNGE.jpg', alt: 'Lounge Saint-Honore', location: 'saint-honore', category: 'common' },
+  { id: 'sh-8', src: '/images/galerie/saint-honore/LobbyShotisaniere.jpg', alt: 'Tisanerie Saint-Honore', location: 'saint-honore', category: 'common' },
+  { id: 'sh-9', src: '/images/galerie/saint-honore/Barista-SHO.png', alt: 'Barista Saint-Honore', location: 'saint-honore', category: 'services' },
+  { id: 'sh-10', src: '/images/galerie/saint-honore/Dana1.jpg', alt: 'Restaurant Dana', location: 'saint-honore', category: 'services' },
+  { id: 'sh-11', src: '/images/galerie/saint-honore/Danaheader.jpg', alt: 'Restaurant Dana Header', location: 'saint-honore', category: 'services' },
+  { id: 'sh-12', src: '/images/galerie/saint-honore/SportSho1.jpg', alt: 'Sport Saint-Honore', location: 'saint-honore', category: 'sport' },
+  { id: 'sh-13', src: '/images/galerie/saint-honore/RooftopSho2.jpg', alt: 'Rooftop Saint-Honore', location: 'saint-honore', category: 'rooftop' },
+  { id: 'sh-14', src: '/images/galerie/saint-honore/RooftopShoIA1.png', alt: 'Rooftop Saint-Honore Vue', location: 'saint-honore', category: 'rooftop' },
+  { id: 'sh-15', src: '/images/galerie/saint-honore/RooftopSHOTE.jpg', alt: 'Rooftop Saint-Honore Terrasse', location: 'saint-honore', category: 'rooftop' },
+  { id: 'sh-16', src: '/images/galerie/saint-honore/SHO_8EME.jpeg', alt: 'Vue 8eme Saint-Honore', location: 'saint-honore', category: 'rooftop' },
+  { id: 'sh-17', src: '/images/galerie/saint-honore/KWERK-STHONORE-JUILLET-22_006_FA.jpg', alt: 'Saint-Honore Interieur', location: 'saint-honore', category: 'common' },
+  { id: 'sh-18', src: '/images/galerie/saint-honore/KWERK-STHONORE-JUILLET-22_082_FA.jpg', alt: 'Saint-Honore Details', location: 'saint-honore', category: 'common' },
+  { id: 'sh-19', src: '/images/galerie/saint-honore/Traiteur.jpg', alt: 'Traiteur Saint-Honore', location: 'saint-honore', category: 'events' },
+  { id: 'sh-20', src: '/images/galerie/saint-honore/Traiteur_2.jpg', alt: 'Traiteur Saint-Honore 2', location: 'saint-honore', category: 'events' },
+  { id: 'sh-21', src: '/images/galerie/saint-honore/Event_SHO_Lobby.png', alt: 'Evenement Lobby Saint-Honore', location: 'saint-honore', category: 'events' },
+  { id: 'sh-22', src: '/images/galerie/saint-honore/DANA(10)(1).jpg', alt: 'Dana Restaurant Detail', location: 'saint-honore', category: 'services' },
+
+  // Messine (13 images)
+  { id: 'ms-1', src: '/images/galerie/messine/LobbyMes1.jpg', alt: 'Lobby Messine', location: 'messine', category: 'lobby' },
+  { id: 'ms-2', src: '/images/galerie/messine/LobbyMes2.jpg', alt: 'Lobby Messine 2', location: 'messine', category: 'lobby' },
+  { id: 'ms-3', src: '/images/galerie/messine/LobbyMes2Barista.jpg', alt: 'Barista Messine', location: 'messine', category: 'services' },
+  { id: 'ms-4', src: '/images/galerie/messine/DomeLobbyMes1.jpg', alt: 'Dome Lobby Messine', location: 'messine', category: 'common' },
+  { id: 'ms-5', src: '/images/galerie/messine/BUREAUMESSINE.jpg', alt: 'Bureau Messine', location: 'messine', category: 'spaces' },
+  { id: 'ms-6', src: '/images/galerie/messine/SalledereunionMes1.jpg', alt: 'Salle de Reunion Messine', location: 'messine', category: 'spaces' },
+  { id: 'ms-7', src: '/images/galerie/messine/BARISTAMESSINE(2).jpg', alt: 'Barista Messine', location: 'messine', category: 'services' },
+  { id: 'ms-8', src: '/images/galerie/messine/SportMes1.jpg', alt: 'Sport Messine', location: 'messine', category: 'sport' },
+  { id: 'ms-9', src: '/images/galerie/messine/ESPACEWELLNESSMESSINE(5).jpg', alt: 'Wellness Messine', location: 'messine', category: 'wellness' },
+  { id: 'ms-10', src: '/images/galerie/messine/SAUNAINFRAROUGEMESSINE.jpg', alt: 'Sauna Messine', location: 'messine', category: 'wellness' },
+  { id: 'ms-11', src: '/images/galerie/messine/ROOFTOPMESSINE(4).jpg', alt: 'Rooftop Messine', location: 'messine', category: 'rooftop' },
+  { id: 'ms-12', src: '/images/galerie/messine/RooftopMes1.jpg', alt: 'Rooftop Messine Vue', location: 'messine', category: 'rooftop' },
+  { id: 'ms-13', src: '/images/galerie/messine/SALLEDERÉUNIONMESSINE(10).jpg', alt: 'Salle de Reunion Messine 2', location: 'messine', category: 'spaces' },
+
+  // Madeleine (11 images)
+  { id: 'md-1', src: '/images/galerie/madeleine/AccueilMad1.png', alt: 'Accueil Madeleine', location: 'madeleine', category: 'lobby' },
+  { id: 'md-2', src: '/images/galerie/madeleine/LobbyMad1.jpg', alt: 'Lobby Madeleine', location: 'madeleine', category: 'lobby' },
+  { id: 'md-3', src: '/images/galerie/madeleine/LobbyMad2.jpg', alt: 'Lobby Madeleine 2', location: 'madeleine', category: 'lobby' },
+  { id: 'md-4', src: '/images/galerie/madeleine/LobbyMad3.png', alt: 'Lobby Madeleine 3', location: 'madeleine', category: 'common' },
+  { id: 'md-5', src: '/images/galerie/madeleine/LobbybaristaMad1.jpg', alt: 'Barista Madeleine', location: 'madeleine', category: 'services' },
+  { id: 'md-6', src: '/images/galerie/madeleine/Privatifs_Bureau_MAD.png', alt: 'Bureau Privatif Madeleine', location: 'madeleine', category: 'spaces' },
+  { id: 'md-7', src: '/images/galerie/madeleine/SallecommuneMad1.png', alt: 'Salle Commune Madeleine', location: 'madeleine', category: 'common' },
+  { id: 'md-8', src: '/images/galerie/madeleine/PasserelleMad1.png', alt: 'Passerelle Madeleine', location: 'madeleine', category: 'common' },
+  { id: 'md-9', src: '/images/galerie/madeleine/YogaMad1.png', alt: 'Yoga Madeleine', location: 'madeleine', category: 'sport' },
+  { id: 'md-10', src: '/images/galerie/madeleine/RooftopMad1.png', alt: 'Rooftop Madeleine', location: 'madeleine', category: 'rooftop' },
+  { id: 'md-11', src: '/images/galerie/madeleine/RooftopMadeleineIA1.png', alt: 'Rooftop Madeleine Vue', location: 'madeleine', category: 'rooftop' },
+
+  // Haussmann (10 images)
+  { id: 'hs-1', src: '/images/galerie/haussmann/HS_Lobbysalonentree.jpg', alt: 'Lobby Haussmann', location: 'haussmann', category: 'lobby' },
+  { id: 'hs-2', src: '/images/galerie/haussmann/LobbyHsm1.jpg', alt: 'Lobby Haussmann 1', location: 'haussmann', category: 'lobby' },
+  { id: 'hs-3', src: '/images/galerie/haussmann/LobbyHsm2.jpg', alt: 'Lobby Haussmann 2', location: 'haussmann', category: 'common' },
+  { id: 'hs-4', src: '/images/galerie/haussmann/LobbyHsm3.jpg', alt: 'Lobby Haussmann 3', location: 'haussmann', category: 'common' },
+  { id: 'hs-5', src: '/images/galerie/haussmann/LobbyHsm4.png', alt: 'Lobby Haussmann 4', location: 'haussmann', category: 'common' },
+  { id: 'hs-6', src: '/images/galerie/haussmann/BureauxHsm1.png', alt: 'Bureaux Haussmann', location: 'haussmann', category: 'spaces' },
+  { id: 'hs-7', src: '/images/galerie/haussmann/TerrasseHsm1.png', alt: 'Terrasse Haussmann', location: 'haussmann', category: 'rooftop' },
+  { id: 'hs-8', src: '/images/galerie/haussmann/RooftopHSM2.png', alt: 'Rooftop Haussmann', location: 'haussmann', category: 'rooftop' },
+  { id: 'hs-9', src: '/images/galerie/haussmann/BISTRO-EVENT-HSM.png', alt: 'Bistro Event Haussmann', location: 'haussmann', category: 'events' },
+  { id: 'hs-10', src: '/images/galerie/haussmann/Kwerk_Hausmann_2025_(c)_21.jpg', alt: 'Haussmann Design', location: 'haussmann', category: 'common' },
+];
+
+export const galleryFilters = [
+  'all',
+  'saint-honore',
+  'messine',
+  'madeleine',
+  'haussmann',
+] as const;

@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "title": "KWERK - The Art of Work",
+    "description": "Espaces de travail d'exception au coeur de Paris 8eme. Bureaux privatifs, suites signatures et etages entiers dans un cadre unique."
+  },
+  "nav": {
+    "home": "Accueil",
+    "addresses": "Adresses",
+    "spaces": "Espaces",
+    "services": "Services",
+    "events": "Evenements",
+    "gallery": "Galerie",
+    "contact": "Contact",
+    "planVisit": "Planifier une visite",
+    "language": "EN"
+  },
+  "hero": {
+    "title": "The Art of Work",
+    "subtitle": "Des espaces de travail d'exception au coeur du 8eme arrondissement de Paris",
+    "cta": "Decouvrir nos espaces",
+    "scroll": "Defiler vers le bas"
+  },
+  "locations": {
+    "title": "Nos adresses",
+    "subtitle": "Quatre adresses d'exception dans le 8eme arrondissement",
+    "surface": "m\u00b2",
+    "discover": "Decouvrir",
+    "metro": "Metro",
+    "capacity": "Capacite",
+    "amenities": "Equipements",
+    "highlights": "Points forts",
+    "gallery": "Galerie photos",
+    "contactCta": "Planifier une visite",
+    "backToLocations": "Retour aux adresses",
+    "saint-honore": {
+      "name": "Saint-Honore",
+      "address": "18 rue de Courcelles",
+      "description": "Notre vaisseau amiral de 6 100 m\u00b2, avec rooftop panoramique 360\u00b0, restaurant Dana et 3 studios de sport.",
+      "metro": "Courcelles (L2)",
+      "capacity": "150 personnes (rooftop)",
+      "highlights": "Rooftop 360\u00b0 (150 pers), Restaurant Dana, 3 studios sport, Barista, Spa & Wellness"
+    },
+    "messine": {
+      "name": "Messine",
+      "address": "16 avenue de Messine",
+      "description": "4 300 m\u00b2 d'elegance avec 2 rooftops, 2 saunas et une cabine de flottaison unique.",
+      "metro": "Miromesnil (L9, L13)",
+      "capacity": "100 personnes (rooftops)",
+      "highlights": "2 rooftops (100 pers), 2 saunas, Cabine flottante, Barista"
+    },
+    "madeleine": {
+      "name": "Madeleine",
+      "address": "22 boulevard Malesherbes",
+      "description": "5 600 m\u00b2 avec centre de conference de 120 places et 2 studios de sport.",
+      "metro": "Madeleine (L8, L12, L14)",
+      "capacity": "120 personnes (conference)",
+      "highlights": "Centre de conference (120 pers), 2 studios sport, Barista, Wellness"
+    },
+    "haussmann": {
+      "name": "Haussmann",
+      "address": "29-31 rue de Courcelles",
+      "description": "4 200 m\u00b2 au design biophilique avec 3 salles de reunion modulables.",
+      "metro": "Courcelles (L2)",
+      "capacity": "10-40 personnes (reunions)",
+      "highlights": "3 salles de reunion (10-40 pers), Design biophilique, Barista"
+    }
+  },
+  "spaces": {
+    "title": "Nos espaces",
+    "subtitle": "Des solutions adaptees a chaque besoin",
+    "executive": {
+      "name": "Bureaux Executifs",
+      "description": "Des bureaux privatifs de 2 a 20 postes, entierement equipes et personnalisables. Mobilier haut de gamme, lumiere naturelle et services premium inclus."
+    },
+    "suites": {
+      "name": "Suites Signatures",
+      "description": "Des espaces de 20 a 50 postes avec amenagements sur mesure. Identite propre, acces privatif et services dedies pour les equipes en croissance."
+    },
+    "floors": {
+      "name": "Etages Privatifs",
+      "description": "Des etages entiers de 50 a 200+ postes pour les entreprises recherchant exclusivite et confidentialite totales. Configuration libre et branding personnalise."
+    }
+  },
+  "services": {
+    "title": "Nos services",
+    "subtitle": "Une experience de travail holistique",
+    "dana": {
+      "name": "Restaurant Dana",
+      "description": "Une cuisine saine et gourmande, preparee chaque jour par notre chef. Menu du jour, options vegetariennes et livraison a l'etage."
+    },
+    "barista": {
+      "name": "Barista",
+      "description": "Un barista professionnel a demeure pour des cafes de specialite, thes et boissons chaudes tout au long de la journee."
+    },
+    "sport": {
+      "name": "Sport",
+      "description": "Plus de 40 cours par semaine : yoga, pilates, boxe, HIIT, meditation. Studios equipes et coachs certifies."
+    },
+    "wellness": {
+      "name": "Wellness",
+      "description": "Spa, saunas, cabine de flottaison et soins sur rendez-vous. Un espace de bien-etre pour recharger corps et esprit."
+    }
+  },
+  "events": {
+    "title": "Evenements",
+    "subtitle": "Des experiences sur mesure dans des lieux d'exception",
+    "culinary": {
+      "name": "Culinaire",
+      "description": "Cours de cuisine, degustations, diners prives avec chef etoile."
+    },
+    "entertainment": {
+      "name": "Divertissement",
+      "description": "Concerts prives, spectacles, soirees a theme dans nos espaces."
+    },
+    "technical": {
+      "name": "Technique",
+      "description": "Conferences, seminaires, ateliers avec equipement audiovisuel professionnel."
+    },
+    "scenography": {
+      "name": "Scenographie",
+      "description": "Decorations florales, installations artistiques, mises en scene sur mesure."
+    }
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Decouvrez nos espaces en images",
+    "all": "Tous",
+    "close": "Fermer",
+    "previous": "Precedent",
+    "next": "Suivant",
+    "imageOf": "sur"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Planifiez une visite de nos espaces",
+    "firstName": "Prenom",
+    "lastName": "Nom",
+    "email": "Email",
+    "phone": "Telephone",
+    "company": "Societe",
+    "positions": "Nombre de postes",
+    "type": "Type de recherche",
+    "typePlaceholder": "Selectionnez...",
+    "typeOptions": {
+      "executive": "Bureaux Executifs",
+      "suite": "Suites Signatures",
+      "floor": "Etages Privatifs",
+      "event": "Evenement",
+      "other": "Autre"
+    },
+    "source": "Comment nous avez-vous connu ?",
+    "sourcePlaceholder": "Selectionnez...",
+    "sourceOptions": {
+      "search": "Recherche Google",
+      "social": "Reseaux sociaux",
+      "referral": "Recommandation",
+      "press": "Presse",
+      "other": "Autre"
+    },
+    "message": "Votre message",
+    "submit": "Envoyer",
+    "sending": "Envoi en cours...",
+    "success": "Message envoye avec succes ! Nous vous recontacterons rapidement.",
+    "error": "Une erreur est survenue. Veuillez reessayer ou nous contacter directement.",
+    "required": "Ce champ est requis",
+    "invalidEmail": "Email invalide",
+    "invalidPhone": "Numero de telephone invalide",
+    "info": {
+      "title": "Informations",
+      "phone": "Telephone",
+      "email": "Email",
+      "followUs": "Suivez-nous"
+    }
+  },
+  "cgu": {
+    "title": "Conditions Generales d'Utilisation",
+    "lastUpdated": "Derniere mise a jour"
+  },
+  "legal": {
+    "title": "Mentions Legales",
+    "editor": "Editeur du site",
+    "hosting": "Hebergement",
+    "credits": "Credits"
+  },
+  "footer": {
+    "description": "Espaces de travail d'exception au coeur de Paris.",
+    "quickLinks": "Liens rapides",
+    "ourAddresses": "Nos adresses",
+    "followUs": "Suivez-nous",
+    "rights": "Tous droits reserves.",
+    "cgu": "CGU",
+    "legalNotice": "Mentions legales",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn"
+  }
+}

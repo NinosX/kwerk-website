@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "title": "KWERK - The Art of Work",
+    "description": "Exceptional workspaces in the heart of Paris 8th arrondissement. Private offices, signature suites and full floors in a unique setting."
+  },
+  "nav": {
+    "home": "Home",
+    "addresses": "Addresses",
+    "spaces": "Spaces",
+    "services": "Services",
+    "events": "Events",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "planVisit": "Plan a visit",
+    "language": "FR"
+  },
+  "hero": {
+    "title": "The Art of Work",
+    "subtitle": "Exceptional workspaces in the heart of Paris' 8th arrondissement",
+    "cta": "Discover our spaces",
+    "scroll": "Scroll down"
+  },
+  "locations": {
+    "title": "Our addresses",
+    "subtitle": "Four exceptional addresses in the 8th arrondissement",
+    "surface": "sq m",
+    "discover": "Discover",
+    "metro": "Metro",
+    "capacity": "Capacity",
+    "amenities": "Amenities",
+    "highlights": "Highlights",
+    "gallery": "Photo gallery",
+    "contactCta": "Plan a visit",
+    "backToLocations": "Back to addresses",
+    "saint-honore": {
+      "name": "Saint-Honore",
+      "address": "18 rue de Courcelles",
+      "description": "Our flagship 6,100 sq m space, with a 360° panoramic rooftop, Dana restaurant and 3 sport studios.",
+      "metro": "Courcelles (L2)",
+      "capacity": "150 people (rooftop)",
+      "highlights": "360° Rooftop (150 ppl), Dana Restaurant, 3 Sport Studios, Barista, Spa & Wellness"
+    },
+    "messine": {
+      "name": "Messine",
+      "address": "16 avenue de Messine",
+      "description": "4,300 sq m of elegance with 2 rooftops, 2 saunas and a unique flotation cabin.",
+      "metro": "Miromesnil (L9, L13)",
+      "capacity": "100 people (rooftops)",
+      "highlights": "2 Rooftops (100 ppl), 2 Saunas, Flotation Cabin, Barista"
+    },
+    "madeleine": {
+      "name": "Madeleine",
+      "address": "22 boulevard Malesherbes",
+      "description": "5,600 sq m with a 120-seat conference center and 2 sport studios.",
+      "metro": "Madeleine (L8, L12, L14)",
+      "capacity": "120 people (conference)",
+      "highlights": "Conference Center (120 ppl), 2 Sport Studios, Barista, Wellness"
+    },
+    "haussmann": {
+      "name": "Haussmann",
+      "address": "29-31 rue de Courcelles",
+      "description": "4,200 sq m of biophilic design with 3 modular meeting rooms.",
+      "metro": "Courcelles (L2)",
+      "capacity": "10-40 people (meetings)",
+      "highlights": "3 Meeting Rooms (10-40 ppl), Biophilic Design, Barista"
+    }
+  },
+  "spaces": {
+    "title": "Our spaces",
+    "subtitle": "Solutions tailored to every need",
+    "executive": {
+      "name": "Executive Offices",
+      "description": "Private offices for 2 to 20 workstations, fully equipped and customizable. Premium furniture, natural light and included premium services."
+    },
+    "suites": {
+      "name": "Signature Suites",
+      "description": "Spaces for 20 to 50 workstations with bespoke layouts. Own identity, private access and dedicated services for growing teams."
+    },
+    "floors": {
+      "name": "Private Floors",
+      "description": "Full floors for 50 to 200+ workstations for companies seeking total exclusivity and confidentiality. Free layout and custom branding."
+    }
+  },
+  "services": {
+    "title": "Our services",
+    "subtitle": "A holistic work experience",
+    "dana": {
+      "name": "Dana Restaurant",
+      "description": "Healthy and gourmet cuisine, freshly prepared daily by our chef. Daily menu, vegetarian options and floor delivery."
+    },
+    "barista": {
+      "name": "Barista",
+      "description": "An in-house professional barista for specialty coffees, teas and hot beverages throughout the day."
+    },
+    "sport": {
+      "name": "Sport",
+      "description": "Over 40 classes per week: yoga, pilates, boxing, HIIT, meditation. Equipped studios and certified coaches."
+    },
+    "wellness": {
+      "name": "Wellness",
+      "description": "Spa, saunas, flotation cabin and treatments by appointment. A wellness space to recharge body and mind."
+    }
+  },
+  "events": {
+    "title": "Events",
+    "subtitle": "Bespoke experiences in exceptional venues",
+    "culinary": {
+      "name": "Culinary",
+      "description": "Cooking classes, tastings, private dinners with starred chefs."
+    },
+    "entertainment": {
+      "name": "Entertainment",
+      "description": "Private concerts, shows, themed parties in our spaces."
+    },
+    "technical": {
+      "name": "Technical",
+      "description": "Conferences, seminars, workshops with professional audiovisual equipment."
+    },
+    "scenography": {
+      "name": "Scenography",
+      "description": "Floral decorations, artistic installations, bespoke staging."
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Discover our spaces in images",
+    "all": "All",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "imageOf": "of"
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Plan a visit to our spaces",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "positions": "Number of workstations",
+    "type": "Type of inquiry",
+    "typePlaceholder": "Select...",
+    "typeOptions": {
+      "executive": "Executive Offices",
+      "suite": "Signature Suites",
+      "floor": "Private Floors",
+      "event": "Event",
+      "other": "Other"
+    },
+    "source": "How did you hear about us?",
+    "sourcePlaceholder": "Select...",
+    "sourceOptions": {
+      "search": "Google Search",
+      "social": "Social Media",
+      "referral": "Referral",
+      "press": "Press",
+      "other": "Other"
+    },
+    "message": "Your message",
+    "submit": "Send",
+    "sending": "Sending...",
+    "success": "Message sent successfully! We will get back to you shortly.",
+    "error": "An error occurred. Please try again or contact us directly.",
+    "required": "This field is required",
+    "invalidEmail": "Invalid email",
+    "invalidPhone": "Invalid phone number",
+    "info": {
+      "title": "Information",
+      "phone": "Phone",
+      "email": "Email",
+      "followUs": "Follow us"
+    }
+  },
+  "cgu": {
+    "title": "Terms of Use",
+    "lastUpdated": "Last updated"
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "editor": "Website editor",
+    "hosting": "Hosting",
+    "credits": "Credits"
+  },
+  "footer": {
+    "description": "Exceptional workspaces in the heart of Paris.",
+    "quickLinks": "Quick links",
+    "ourAddresses": "Our addresses",
+    "followUs": "Follow us",
+    "rights": "All rights reserved.",
+    "cgu": "Terms of Use",
+    "legalNotice": "Legal Notice",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn"
+  }
+}
