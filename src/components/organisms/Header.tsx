@@ -27,7 +27,7 @@ export default function Header() {
   useLockBodyScroll(menuOpen);
 
   const isScrolled = scrollY > 10;
-  const isHidden = scrollDirection === 'down' && scrollY > 300 && !menuOpen;
+  const isHidden = false;
 
   const closeMenu = () => {
     setMenuOpen(false);
