@@ -2,7 +2,6 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import AnimatedSection from '@/components/atoms/AnimatedSection';
-import HeroSection from '@/components/organisms/HeroSection';
 
 export default function EvenementsPage() {
   const t = useTranslations('events');
@@ -12,12 +11,19 @@ export default function EvenementsPage() {
 
   return (
     <>
-      {/* Hero */}
-      <HeroSection
-        image="/images/galerie/saint-honore/RooftopShoIA1.png"
-        height="full"
-        clean
-      />
+      {/* Hero video */}
+      <section className="relative h-screen overflow-hidden">
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/videos/KWERK_VDEF_16.9.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/30" />
+      </section>
 
       {/* Intro statement */}
       <section className="py-28 px-4 sm:px-6 lg:px-8">
@@ -145,19 +151,6 @@ export default function EvenementsPage() {
             </div>
           </AnimatedSection>
         </div>
-      </section>
-
-      {/* Video section */}
-      <section>
-        <video
-          className="w-full h-auto block"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src="/videos/KWERK_VDEF_16.9.mp4" type="video/mp4" />
-        </video>
       </section>
 
       {/* CTA section */}
